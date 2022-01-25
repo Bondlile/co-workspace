@@ -260,4 +260,77 @@ header a {
   padding-top: 10px;
   font-size: 20px;
 }
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.details form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.details form .e-mail {
+  margin-right: 5px;
+  width: 150px;
+  height: 45px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.details form .name {
+  padding-left: 10px;
+  margin-right: 5px;
+  width: 150px;
+  font-size: 15px;
+  height: 45px;
+}
+
+.details .subject {
+  width: 95%;
+  height: 45px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.details .text-area {
+  padding-left: 10px;
+  padding-top: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+.details button {
+  background-color: orange;
+  width: 95%;
+  height: 45px;
+  font-size: 15px;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

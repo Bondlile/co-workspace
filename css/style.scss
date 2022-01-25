@@ -286,6 +286,73 @@ width: 60%;
 
 }
 
+// baner end
+
+// Details Section
+.details{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+   margin-bottom: 10px;
+
+    .e-mail{
+        margin-right: 5px;
+        width: 150px;
+        height: 45px;
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    .name{
+        padding-left: 10px;
+        margin-right: 5px;
+        width: 150px;
+        font-size: 15px;
+        height: 45px;
+    }
+}
+
+.subject{
+    width: 95%;
+    height: 45px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.text-area{
+    padding-left: 10px;
+    padding-top: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: orange;
+    width: 95%;
+    height: 45px;
+    font-size: 15px;
+    color: #fff;
+}
+
+
+
+}
+
+
+
+// end of Details Section
+
 
 
 
