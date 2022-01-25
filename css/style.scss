@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+// Variables
+
+
+$wcolor:#fff;
+$bcolor:#000;
+$fontkelson:"kelson";
+
+
+
+
+
+
+
+
+
+
+
+
+
+// end of variables
+
+    
+// header style  
+
+header{
+    display: flex;
+    justify-content: space-between;
+    z-index: 500;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    
+    img{
+        width: 141px;
+        height: auto;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+    }
+
+    li{
+        display: inline;
+
+    }
+
+    a{
+        text-decoration: none;
+        font-family:$fontkelson ;
+        font-size: 15px;
+        color: $bcolor;
+        margin-left: 5px;
+    }
+}
+
+// end of header style 
+
+
+// HOME STYLE
+
+
+// Hero style
+.hero{
+
+
+    img{
+        position: fixed;
+        position: relative;
+        top: 56px;
+        left: 197px;
+    }
+
+    .hero-inner{
+        margin-top: 90px;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+// end of Hero style
+
+// Gallery Style
+.gallery{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+
+.onHover{
+    width: 100%;
+    margin: 5px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+
+    h3, p{
+        width: 100%;
+    }
+ }
+
+img{
+width: 60%;
+
+}
+
+.text{
+    background-color: rgba(247, 7, 7, 0.37);
+    position: absolute;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    transition: all 0.7s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.onHover:hover .text{
+    max-width: 40%;
+}
+
+
+
+
+
+}
+
+// end of gallery style
+
+// END OF HOME STYLE
+
+
+
+// ABOUT US STYLE 
+
+
+
+
+
+
+
+// END OF ABOUT US
+
+
+
+// CONTACT US STYLE
+
+.baner{
+
+   
+    .premium{
+        position: fixed;
+        position: relative;
+        top: 56px;
+        left: 197px;
+    }
+
+    .baner-inner{
+        margin-top: 90px;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+       
+    }
+
+    .info{
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+// END OF CONTACT US STYLE
+
+
+
+
+
+
+
+
+
+// FOOTER STYLE
+
+
+
+
+
+
+
+// END OF FOOTER
