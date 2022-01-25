@@ -143,7 +143,121 @@ header a {
   text-align: center;
 }
 
+.baner .info {
+  margin-bottom: 30px;
+}
+
 .baner .info img {
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.baner .info .contact-details {
+  background-color: black;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.baner .info .contact-details .address {
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.baner .info .contact-details .address ul {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.baner .info .contact-details .address ul li {
+  width: 40px;
+  margin: 0 auto;
+}
+
+.baner .info .contact-details .address ul li i {
+  font-size: 50px;
+  color: #fff;
+}
+
+.baner .info .contact-details .address h3 {
+  font-size: 30px;
+}
+
+.baner .info .contact-details .address p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.baner .info .contact-details .email {
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.baner .info .contact-details .email ul {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.baner .info .contact-details .email ul li {
+  width: 40px;
+  margin: 0 auto;
+}
+
+.baner .info .contact-details .email ul li i {
+  font-size: 50px;
+  color: #fff;
+}
+
+.baner .info .contact-details .email h3 {
+  font-size: 30px;
+}
+
+.baner .info .contact-details .email p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.baner .info .contact-details .phone {
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+.baner .info .contact-details .phone ul {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.baner .info .contact-details .phone ul li {
+  width: 40px;
+  margin: 0 auto;
+}
+
+.baner .info .contact-details .phone ul li i {
+  font-size: 50px;
+  color: #fff;
+}
+
+.baner .info .contact-details .phone h3 {
+  font-size: 30px;
+}
+
+.baner .info .contact-details .phone p {
+  padding-top: 10px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

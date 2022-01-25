@@ -187,8 +187,100 @@ width: 60%;
     }
 
     .info{
+        margin-bottom: 30px;
         img{
             width: 100%;
+            margin-bottom: 10px;
+        }
+        .contact-details{
+            background-color: black;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .address{
+                padding-top: 20px;
+                align-items: center;
+
+                ul{
+                    list-style: none;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                  li {
+                      width: 40px;
+                      margin: 0 auto;
+                    i{
+                        font-size: 50px;
+                        color:#fff;
+                    }
+                  }
+                }
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    padding-top: 10px;
+                    font-size: 20px;
+                }
+            }
+
+            .email{
+                padding-top: 20px;
+                align-items: center;
+
+                ul{
+                    list-style: none;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                  li {
+                      width: 40px;
+                      margin: 0 auto;
+                    i{
+                        font-size: 50px;
+                        color:#fff;
+                    }
+                  }
+                }
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    padding-top: 10px;
+                    font-size: 20px;
+                }
+            }
+
+            .phone{
+                padding-top: 20px;
+                align-items: center;
+                padding-bottom: 50px;
+
+                ul{
+                    list-style: none;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                  li {
+                      width: 40px;
+                      margin: 0 auto;
+                    i{
+                        font-size: 50px;
+                        color:#fff;
+                    }
+                  }
+                }
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    padding-top: 10px;
+                    font-size: 20px;
+                }
+                
+            }
         }
     }
 
