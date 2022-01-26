@@ -1,11 +1,59 @@
-* {
-  padding: 0;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 header {
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,7 +64,6 @@ header {
   position: relative;
   position: fixed;
   width: 100%;
-  padding: 10px;
 }
 
 header img {
@@ -25,10 +72,10 @@ header img {
 }
 
 header ul {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
 }
 
 header li {
@@ -45,7 +92,7 @@ header a {
 
 .hero img {
   position: fixed;
-  position: relative;
+  position: absolute;
   top: 56px;
   left: 197px;
 }
@@ -63,12 +110,12 @@ header a {
 }
 
 .gallery {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .gallery .onHover {
@@ -124,11 +171,22 @@ header a {
   max-width: 40%;
 }
 
+.baner h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.baner p {
+  padding: 15px;
+  color: grey;
+  font-size: 20px;
+}
+
 .baner .premium {
+  left: 197px;
   position: fixed;
   position: relative;
   top: 56px;
-  left: 197px;
 }
 
 .baner .baner-inner {
@@ -144,15 +202,32 @@ header a {
 }
 
 .baner .info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .baner .info img {
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 97%;
   margin-bottom: 10px;
 }
 
 .baner .info .contact-details {
+  width: 97%;
   background-color: black;
   color: #fff;
   -webkit-box-pack: center;
@@ -162,6 +237,8 @@ header a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .baner .info .contact-details .address {
@@ -172,14 +249,14 @@ header a {
 }
 
 .baner .info .contact-details .address ul {
+  margin-bottom: 10px;
   list-style: none;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .baner .info .contact-details .address ul li {
-  width: 40px;
   margin: 0 auto;
+  width: 40px;
 }
 
 .baner .info .contact-details .address ul li i {
@@ -205,13 +282,13 @@ header a {
 
 .baner .info .contact-details .email ul {
   list-style: none;
-  margin-top: 10px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .baner .info .contact-details .email ul li {
-  width: 40px;
   margin: 0 auto;
+  width: 40px;
 }
 
 .baner .info .contact-details .email ul li i {
@@ -224,8 +301,8 @@ header a {
 }
 
 .baner .info .contact-details .email p {
-  padding-top: 10px;
   font-size: 20px;
+  padding-top: 10px;
 }
 
 .baner .info .contact-details .phone {
@@ -237,9 +314,9 @@ header a {
 }
 
 .baner .info .contact-details .phone ul {
+  margin-bottom: 10px;
   list-style: none;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .baner .info .contact-details .phone ul li {
@@ -275,6 +352,7 @@ header a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 20px;
 }
 
 .details h4 {
@@ -286,30 +364,35 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .details form .e-mail {
-  margin-right: 5px;
-  width: 150px;
-  height: 45px;
-  padding-left: 10px;
   font-size: 15px;
+  font-size: 15px;
+  height: 45px;
+  padding-left: 5px;
 }
 
 .details form .name {
-  padding-left: 10px;
-  margin-right: 5px;
-  width: 150px;
+  padding-left: 5px;
+  margin-top: 10px;
+  width: 295px;
   font-size: 15px;
   height: 45px;
 }
 
 .details .subject {
-  width: 95%;
+  width: 90%;
   height: 45px;
   margin-bottom: 10px;
   padding-left: 10px;
+  margin-top: 10px;
 }
 
 .details .text-area {
@@ -322,15 +405,42 @@ header a {
       -ms-flex-align: center;
           align-items: center;
   height: 75px;
-  width: 95%;
+  width: 90%;
   margin-bottom: 10px;
 }
 
 .details button {
   background-color: orange;
-  width: 95%;
+  width: 90%;
   height: 45px;
   font-size: 15px;
+  border: none;
   color: #fff;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+}
+
+footer .footer-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+footer .footer-top ul li {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-top ul li i {
+  font-size: 30px;
+  color: #fff;
+  padding-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
