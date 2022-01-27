@@ -112,6 +112,7 @@ header a:active {
   position: absolute;
   top: 56px;
   left: 197px;
+  z-index: 60;
 }
 
 .hero .hero-inner {
@@ -600,6 +601,7 @@ header a:active {
   right: 0px;
   position: fixed;
   top: 72px;
+  z-index: 300;
 }
 
 .details {
@@ -822,5 +824,28 @@ footer .footer-bottom p {
   color: grey;
   font-size: 18px;
   padding: 8px 0 15px 10px;
+}
+
+@media (min-width: 568px) {
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .footer-top ul {
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-item2 h4 {
+    padding-top: 10px;
+  }
+  .footer-item2 h4 {
+    padding-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

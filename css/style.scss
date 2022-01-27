@@ -99,7 +99,7 @@ header{display: flex;justify-content:space-between;z-index:10;position: fixed; w
 // Hero style
 .hero{ padding-top: 75px;
 
-    .premium img{ position: fixed;position: absolute; top: 56px; left: 197px;}   
+    .premium img{ position: fixed;position: absolute; top: 56px; left: 197px; z-index: 60;}   
 
     .hero-inner{ margin-top: 90px;margin-bottom: 30px;justify-content: center;align-items: center;text-align: center;
     
@@ -269,7 +269,7 @@ img{ width: 100%;}
     }
 
 }
-.premium{ right: 0px; position: fixed; top: 72px; } 
+.premium{ right: 0px; position: fixed; top: 72px; z-index: 300; } 
 
 // baner end
 
@@ -378,3 +378,30 @@ footer{background-color: black;color: #fff; display: flex; flex-direction: colum
             }
         }
 // END OF FOOTER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERIES
+
+// home page media querry
+
+@media ( min-width: 568px){
+.flex{ display: flex;}
+footer .footer-top ul{ margin: 0 auto; align-items: center; justify-content: center;}
+.footer-item2 h4{ padding-top: 10px;}
+.footer-item2 h4{ padding-top: 20px;}
+
+}
+
