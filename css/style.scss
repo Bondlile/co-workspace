@@ -75,17 +75,20 @@ $fontkelson:"kelson";
     
 // header style  
 
-header{ padding: 10px;display: flex;justify-content: space-between;z-index: 500;position: relative;position: fixed; width: 100%;   
+
+
+header{display: flex;justify-content:space-between;z-index:10;position: fixed; width: 100%; top: 0;  
     
-    img{  width: 141px;height: auto; }          
+    img{  width: 141px;height: auto; padding-left: 10px; padding-top: 10px;}          
 
-    ul{ list-style: none; display: flex; }   
+     ul{ list-style: none; display: flex;justify-content: center;align-items: center; padding-top: 10px; padding-right: 10px; }   
 
-    li{display: inline; }   
+    li{display: inline;}   
 
-    a{ text-decoration: none;font-family:$fontkelson ; font-size: 15px; color: $bcolor;margin-left: 5px;}             
+   a{ text-decoration: none;font-family:$fontkelson ; font-size: 15px; color: $bcolor;margin-left: 5px;} 
+   a:active { color: red;}           
    
-}
+ }
 
 // end of header style 
 
@@ -96,7 +99,7 @@ header{ padding: 10px;display: flex;justify-content: space-between;z-index: 500;
 // Hero style
 .hero{
 
-    img{ position: fixed;position: absolute; top: 56px; left: 197px;}   
+    .premium img{ position: fixed;position: absolute; top: 56px; left: 197px;}   
 
     .hero-inner{ margin-top: 90px;margin-bottom: 30px;justify-content: center;align-items: center;text-align: center; }
 
@@ -127,9 +130,59 @@ img{width: 60%;}
 
 // ABOUT US STYLE 
 
+.banner{width: 100%; padding-top: 150px;display: flex; flex-direction: column;margin: 0 auto;justify-content: center;text-align: center;padding-bottom: 40px;
+    .banner-inner{ padding: 10px; 
+     h1{font-size: 30px; padding-bottom: 10px;}
+     p{ font-size: 18px;}
+}
+
+}
+
+.gallarie{ width: 100%; display: flex; flex-direction: column; background-color: #fff;
+
+.gallarie-inner{ width: 95%; display: flex; flex-direction: column; margin: 0 auto; text-align: left;
+
+img{ width: 100%; height: auto;padding-top: 20px; padding-bottom: 5px;}
+
+.one, .two, .three {
+    margin: 0 auto; align-items: center; justify-content: center; padding-bottom: 30px;
+
+h5{  font-size: 20px; display: flex; margin:  0 auto; text-align: center; align-items: center; justify-content: center; padding-top: 5px; padding-bottom: 10px;}
+
+p{ font-size: 16px; display: flex; margin: 0 auto; justify-content: center; align-items: center; padding: 0px 10px 10px 10px; text-align: center;}
+
+}
+
+}
+@keyframes movement { 
+    
+}
+}
+
+.our-team{ display: flex; flex-direction: column; width: 100%; background-color: #fff; justify-content: center; align-items: center; padding-bottom: 40px;
+
+h2{ font-size: 25px; padding-bottom: 10px;}
+p{ align-items: center; margin: 0 auto; justify-content: center; text-align: center; padding: 0 10px 20px 10px;}
+
+.our-team-inner{ width: 95%; margin: 0 auto; align-items: center; justify-content: center;}
+h6{ margin:  0 auto; text-align: center; font-size: 26px; padding-top: 10px; padding-bottom: 3px;}
+p{ font-size: 18px;}
+
+img{ width: 100%;}
+}
 
 
+.our-clients{ display: flex; flex-direction: column; width: 100%; background-color: #fff; justify-content: center; align-items: center; padding-bottom: 40px;
 
+    h1{ font-size: 30px; padding-bottom: 10px;padding-top: 20px; text-align: center;}
+    p{ align-items: center; font-size: 18px; margin: 0 auto; justify-content: center; text-align: center; padding: 0 10px 20px 10px;}
+
+.brand{ display: flex; flex-wrap: wrap; margin: 0 auto; justify-content: space-evenly;  
+
+    img{ width: 40%; justify-content: space-between;}
+}
+
+}
 
 
 
@@ -139,15 +192,15 @@ img{width: 60%;}
 
 // CONTACT US STYLE
 
-.baner{
+.baner{z-index: 2;
 
         h1{ font-size: 30px;margin-bottom: 10px;}    
         
         p{ padding: 15px; color: grey; font-size: 20px;}       
    
-    .premium{ left: 197px; position: fixed;position: relative; top: 56px; } 
+    
 
-    .baner-inner{ margin-top: 90px; margin-bottom: 50px;justify-content: center;align-items: center; text-align: center;}    
+    .baner-inner{ padding-top: 150px; margin-bottom: 50px;justify-content: center;align-items: center; text-align: center;}    
 
     .info{align-items: center;margin-bottom: 30px;justify-content: center;        
         
@@ -204,6 +257,7 @@ img{width: 60%;}
     }
 
 }
+.premium{ right: 0px; position: fixed; top: 72px; } 
 
 // baner end
 
@@ -213,7 +267,7 @@ img{width: 60%;}
 h4{  font-size: 30px;   margin-bottom: 20px;} 
  
 
-form{  display: flex;  flex-direction: column; margin-bottom: 10px; margin-top: 10px;  
+form{  display: flex;  flex-direction: column; margin-bottom: 10px; margin-top: 10px; width: max-content ;  
   
 
     .e-mail{ font-size: 15px; font-size: 15px;  height: 45px;  padding-left: 5px; }     
@@ -223,13 +277,19 @@ form{  display: flex;  flex-direction: column; margin-bottom: 10px; margin-top: 
   
 }
 
-.subject{width: 90%;  height: 45px;  margin-bottom: 10px;  padding-left: 10px; margin-top: 10px;}  
+.fill { margin: 0 auto;    margin: 0 auto;  justify-content: center; align-items: center; display: flex; flex-direction: column;
+  
+   
+   
+   
+    .subject{width: 90%;  height: 45px;  margin-bottom: 10px;  padding-left: 10px; margin-top: 10px;}  
 
 
 .text-area{ padding-left: 10px; padding-top: 25px; justify-content: center; align-items: center;  height: 75px; width: 90%; margin-bottom: 10px;} 
 
 
 button{ background-color: orange; width: 90%;height: 45px; font-size: 15px;border: none;color: #fff;}  
+}
    
       
    
@@ -256,39 +316,30 @@ button{ background-color: orange; width: 90%;height: 45px; font-size: 15px;borde
 
 
 // FOOTER STYLE
-footer{background-color: black;color: #fff;
+footer{background-color: black;color: #fff; display: flex; flex-direction: column; margin: 0 auto; justify-content: center; align-items: center;
 
     .footer-top{ 
         ul{display: flex; width: 100%;
 
             li{justify-content: space-between;
 
-                i{font-size: 30px; color: #fff; padding-left: 40px; margin-top: 20px;margin-bottom: 20px;
+                i{font-size: 30px; color: grey; padding-left: 40px; margin-top: 20px;margin-bottom: 20px;
                    
                     
                 }
             }
         }
-        
-    }
+        h3,h5{font-size: 26px; display: flex; margin: 0 auto; text-align:  center;justify-self: center;padding-left: 30px; }
+        p{color: grey; font-size: 18px; line-height: normal; padding: 10px; text-align: center;}
+            }
+            h4{ font-size: 30px; display: flex; margin: 0 auto; text-align:  center;justify-self: center;padding-left: 82px;}
 
+            hr{height: 0.5px;border: none;background-color: grey; margin-bottom: 10px; }
 
+            .footer-bottom{ 
 
+                p{ color: grey;font-size: 18px;padding: 8px 0 15px 10px;}
 
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
+            }
+        }
 // END OF FOOTER
