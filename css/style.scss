@@ -62,14 +62,6 @@ $fontkelson:"kelson";
 
 
 
-
-
-
-
-
-
-
-
 // end of variables
 
     
@@ -77,18 +69,40 @@ $fontkelson:"kelson";
 
 
 
-header{display: flex;justify-content:space-between;z-index:10;position: fixed; width: 100%; top: 0;  
-    
-    img{  width: 141px;height: auto; padding-left: 10px; padding-top: 10px;}          
+header{ position: fixed; width: 100%; z-index: 450; display: flex; justify-content: space-between;
+    img{  width: 141px;height: auto; padding-left: 10px; padding-top: 10px; object-fit: contain;} 
 
-     ul{ list-style: none; display: flex;justify-content: center;align-items: center; padding-top: 10px; padding-right: 10px; }   
+ul{ list-style: none; overflow: hidden; position: absolute; 
+a{ display: block; text-decoration: none; color: #000; padding: 20px; background: rgba(255, 166, 0, 0.671); &:hover{ background-color: grey;} } }
 
-    li{display: inline;}   
+.menu{ right: 0; clear: both; transition: max-height 0.2s ease-out ; max-height: 0;}
+.menu-icon{ cursor: pointer; float: right;  padding: 28px 20px;position: relative;
+     .nav-icon{     background-color: darkgray;display: block;height: 2px;width: 18px; position: relative; transition:background 0.2s ease-out ;} }
 
-   a{ text-decoration: none;font-family:$fontkelson ; font-size: 15px; color: $bcolor;margin-left: 5px;} 
-   a:active { color: red;}           
-   
- }
+
+
+.menu-icon .nav-icon::before{ background-color: darkgray;  transition:all 0.2s ease-out ; content: ""; display: block; height: 100%; width: 100%; position: absolute; top: 5px;
+
+}
+.menu-icon .nav-icon::after{ background-color: darkgray; transition:all 0.2s ease-out ; content: ""; display: block; height: 100%; width: 100%; position: absolute; top: -5px;
+
+}
+ .menu-btn{ display: none; }
+
+
+ .menu-btn:checked ~ .menu{ max-height: 240px; }
+ .menu-btn:checked ~ .menu-icon .nav-icon{  background: transparent; }
+
+ .menu-btn:checked ~ .menu-icon .nav-icon::before{ transform:rotate(-45deg) ; top: 0; }
+
+ .menu-btn:checked ~ .menu-icon .nav-icon::after{ transform:rotate(45deg) ; top: 0;  }
+
+}
+
+
+
+
+
 
 // end of header style 
 
@@ -99,7 +113,7 @@ header{display: flex;justify-content:space-between;z-index:10;position: fixed; w
 // Hero style
 .hero{ padding-top: 75px;
 
-    .premium img{ position: fixed;position: absolute; top: 56px; left: 197px; z-index: 60;}   
+    .premium img{ position: fixed;position: absolute; top: 56px; left: 197px; z-index: 30;}   
 
     .hero-inner{ margin-top: 90px;margin-bottom: 30px;justify-content: center;align-items: center;text-align: center;
     
@@ -246,7 +260,7 @@ img{ width: 100%;}
                 }
                 h3{  font-size: 30px;}                 
               
-                p{  font-size: 20px; padding-top: 10px; }                 
+                p,a{  font-size: 20px; padding-top: 10px; text-decoration: none;color: #ffffff; }                 
             }
 
             .phone{  padding-top: 20px;   align-items: center; padding-bottom: 50px;     
@@ -269,7 +283,7 @@ img{ width: 100%;}
     }
 
 }
-.premium{ right: 0px; position: fixed; top: 72px; z-index: 300; } 
+.premium{ right: 0px; position: fixed; top: 72px; z-index: 30; } 
 
 // baner end
 
@@ -279,12 +293,12 @@ img{ width: 100%;}
 h4{  font-size: 30px;   margin-bottom: 20px;} 
  
 
-form{  display: flex;  flex-direction: column; margin-bottom: 10px; margin-top: 10px; width: max-content ;  
+form{  display: flex;  flex-direction: column; margin-bottom: 10px; margin-top: 10px; width: max-content;  
   
 
     .e-mail{ font-size: 15px; font-size: 15px;  height: 45px;  padding-left: 5px; }     
    
-    .name{ padding-left: 5px; margin-top: 10px; width: 295px; font-size: 15px;height: 45px;  }  
+    .name{ padding-left: 5px; margin-top: 10px; width: 295px; font-size: 15px;height: 45px;}  
         
   
 }
@@ -294,38 +308,22 @@ form{  display: flex;  flex-direction: column; margin-bottom: 10px; margin-top: 
    
    
    
-    .subject{width: 90%;  height: 45px;  margin-bottom: 10px;  padding-left: 10px; margin-top: 10px;}  
+    .subject{width: 90%;  height: 51px;  margin-bottom: 10px;  padding-left: 10px; margin-top: 10px;}  
 
 
 .text-area{ padding-left: 10px; padding-top: 25px; justify-content: center; align-items: center;  height: 75px; width: 90%; margin-bottom: 10px;} 
 
-.bt{ display: flex; width: 40px;
-button{ background-color: orange; width: 90%;height: 45px; font-size: 15px;border: none;color: #fff;}  
+.bt{
+button{ background-color: orange; width: 90%;height: 45px; z-index: 80; font-size: 15px;border: none;color: #fff;}  
 }
 
-.btn{ width: 40px;}
 
-.dropdown{ position: relative;display: inline-block;}
+
+.dropdown{ position: relative;display: inline-block; background-color: rgba(128, 128, 128, 0.473);}
  
- .dropdown-content{  position: relative; background-color:rgba(211, 211, 211, 0.685);min-width: 160px; z-index: 3;
-    
- .dropdown-content a { color: black;padding: 12px 16px;text-decoration: none;display: block;
-   
-    
-    
- }
- .dropdown:hover .dropdown-content {
-    display: block;
 
-
-
-  }
- }
 }
-   
-.btn:hover, .dropdown:hover .btn {
-  background-color: #0b7dda;
-}
+
       
 }
 
@@ -358,14 +356,14 @@ footer{background-color: black;color: #fff; display: flex; flex-direction: colum
 
             li{justify-content: space-between;
 
-                i{font-size: 30px; color: grey; padding-left: 40px; margin-top: 20px;margin-bottom: 20px;
+                i{font-size: 30px; color: grey; padding-left: 25px; margin-top: 20px;margin-bottom: 20px;
                    
                     
                 }
             }
         }
         h3,h5{font-size: 26px; display: flex; margin: 0 auto; text-align:  center;justify-self: center;padding-left: 30px; }
-        p{color: grey; font-size: 18px; line-height: normal; padding: 10px; text-align: center;}
+        p  ,a{color: grey; text-decoration: none; font-size: 18px; line-height: normal; padding: 5px; text-align: center;}
             }
             h4{ font-size: 30px; display: flex; margin: 0 auto; text-align:  center;justify-self: center;padding-left: 82px;}
 
@@ -373,7 +371,9 @@ footer{background-color: black;color: #fff; display: flex; flex-direction: colum
 
             .footer-bottom{ 
 
-                p{ color: grey;font-size: 18px;padding: 8px 0 15px 10px;}
+                p{ color: grey;font-size: 18px;padding: 8px 0 15px 10px;
+              
+                }
 
             }
         }
@@ -397,11 +397,73 @@ footer{background-color: black;color: #fff; display: flex; flex-direction: colum
 
 // home page media querry
 
+
+
 @media ( min-width: 568px){
 .flex{ display: flex;}
 footer .footer-top ul{ margin: 0 auto; align-items: center; justify-content: center;}
 .footer-item2 h4{ padding-top: 10px;}
-.footer-item2 h4{ padding-top: 20px;}
 
 }
+
+@media ( min-width: 768px){
+    header{ 
+        img{ width: 220px; }
+        ul{
+            li{
+                a{ font-size: 25px;}            }
+        }
+    }
+    header li{ float: left; }
+
+header li a{ padding: 20px 30px;}
+
+header .menu{  clear: none; float: right; max-height: none; }
+
+.menu-icon{ display: none; }
+    .premium{ width: 200px;}
+
+    .hero{  
+
+        .hero-inner{
+h1{  font-size: 78px;}
+
+        }
+     }
+
+
+.gallery{ display: flex; width: 33.333%;  img{ flex: 33.333%;}}
+
+footer{ 
+
+.flex{ justify-content: center; 
+
+}
+  
+.footer-item2 h4{ padding-top: -7px;}
+
+}
+
+// contact 
+.info{    display: flex; width: 50%;
+img{width: 40%; }
+
+}
+
+}
+.btn{
+    &:hover ~ .dropdown{  max-height: 400px; }
+      
+   
+}
+.dropdown{ background:#000; max-height:0;overflow:hidden;  z-index: 60;transition:all 0.7s ease;
+    a{ padding: 10px 20px; display:block;  width:100%;  text-decoration:none;color:#ffffff;
+        &:hover{ background:#333;       
+           
+        }
+    }
+}
+
+
+
 
