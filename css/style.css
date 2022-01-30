@@ -90,11 +90,11 @@ header ul a {
 }
 
 header ul a:hover {
-  background-color: grey;
+  background-color: darkgray;
 }
 
 header .menu {
-  right: 0;
+  right: 0px;
   clear: both;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
@@ -174,7 +174,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
   position: fixed;
   position: absolute;
   top: 56px;
-  left: 197px;
+  right: 0px;
   z-index: 30;
 }
 
@@ -214,9 +214,9 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 
 .gallery .onHover {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   background-color: #fca709a8;
   overflow: hidden;
   width: 100%;
@@ -228,7 +228,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 }
 
 .gallery .onHover .text p {
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   text-align: center;
   width: 100%;
@@ -246,11 +246,12 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
 
 .gallery .onHover h1 {
-  color: #fff;
+  color: #ffffff;
   font-size: 23px;
   text-align: center;
   padding: 10px;
@@ -309,7 +310,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .gallarie .gallarie-inner {
@@ -329,7 +330,15 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
   width: 100%;
   height: auto;
   padding-top: 20px;
+  cursor: pointer;
   padding-bottom: 5px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.gallarie .gallarie-inner img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .gallarie .gallarie-inner .one, .gallarie .gallarie-inner .two, .gallarie .gallarie-inner .three {
@@ -385,7 +394,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -448,7 +457,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -508,7 +517,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 
 .baner p {
   padding: 15px;
-  color: grey;
+  color: darkgray;
   font-size: 20px;
 }
 
@@ -551,8 +560,8 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 
 .baner .info .contact-details {
   width: 97%;
-  background-color: black;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -584,7 +593,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 
 .baner .info .contact-details .address ul li i {
   font-size: 30px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .baner .info .contact-details .address h3 {
@@ -616,7 +625,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 
 .baner .info .contact-details .email ul li i {
   font-size: 30px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .baner .info .contact-details .email h3 {
@@ -627,7 +636,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
   font-size: 18px;
   padding-top: 10px;
   text-decoration: none;
-  color: gray;
+  color: darkgray;
 }
 
 .baner .info .contact-details .phone {
@@ -651,7 +660,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 
 .baner .info .contact-details .phone ul li i {
   font-size: 30px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .baner .info .contact-details .phone h3 {
@@ -709,10 +718,9 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 
 .details form .e-mail {
   font-size: 15px;
-  font-size: 15px;
   height: 45px;
   padding-left: 5px;
-  margin-top: 9px;
+  margin-top: 10px;
 }
 
 .details form .name {
@@ -724,7 +732,6 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 }
 
 .details .fill {
-  margin: 0 auto;
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -764,15 +771,15 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 }
 
 .details .fill .bt button {
-  background-color: orange;
+  background-color: #ffa500;
   width: 90%;
   height: 45px;
   z-index: 80;
   font-size: 15px;
   border: none;
-  color: #fff;
-  color: black;
-  background-color: grey;
+  color: #ffffff;
+  color: #000000;
+  background-color: darkgray;
   border: 2px outset #b37d00;
 }
 
@@ -785,30 +792,29 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 button {
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: #ff0000;
   position: relative;
   -webkit-animation-name: dropsubmit;
           animation-name: dropsubmit;
   -webkit-animation-duration: 7s;
           animation-duration: 7s;
-  animation-direction: reverse;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
   -webkit-animation-iteration-count: 5;
           animation-iteration-count: 5;
 }
 
 @-webkit-keyframes dropsubmit {
   0% {
-    background-color: red;
     left: 0px;
     top: 0px;
   }
   75% {
-    background-color: green;
     left: 0px;
     top: 100px;
   }
   100% {
-    background-color: red;
+    background-color: #ff0000;
     left: 0px;
     top: 0px;
   }
@@ -816,25 +822,48 @@ button {
 
 @keyframes dropsubmit {
   0% {
-    background-color: red;
     left: 0px;
     top: 0px;
   }
   75% {
-    background-color: green;
     left: 0px;
     top: 100px;
   }
   100% {
-    background-color: red;
+    background-color: #ff0000;
     left: 0px;
     top: 0px;
   }
 }
 
+.btn:hover ~ .dropdown {
+  max-height: 400px;
+}
+
+.dropdown {
+  background: #000000;
+  max-height: 0;
+  overflow: hidden;
+  z-index: 60;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.dropdown a {
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dropdown a:hover {
+  background: #333;
+}
+
 footer {
-  background-color: black;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,7 +895,7 @@ footer .footer-top ul li {
 
 footer .footer-top ul li i {
   font-size: 30px;
-  color: grey;
+  color: darkgray;
   padding-left: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -906,13 +935,13 @@ footer h4 {
 footer hr {
   height: 0.5px;
   border: none;
-  background-color: grey;
+  background-color: darkgray;
   margin-bottom: 10px;
   width: 100%;
 }
 
 footer .footer-bottom p {
-  color: grey;
+  color: darkgray;
   font-size: 18px;
   padding: 8px 0 15px 10px;
 }
@@ -942,13 +971,13 @@ footer .footer-bottom p {
     width: 220px;
   }
   header ul li a {
-    font-size: 18px;
+    font-size: 15px;
   }
   header li {
     float: left;
   }
   header li a {
-    padding: 20px 30px;
+    padding: 30px 30px;
   }
   header .menu {
     clear: none;
@@ -959,10 +988,14 @@ footer .footer-bottom p {
     display: none;
   }
   .premium {
-    width: 200px;
+    padding-top: 20px;
+    width: 120px;
+  }
+  .hero {
+    padding-top: 100px;
   }
   .hero .hero-inner h1 {
-    font-size: 78px;
+    font-size: 30px;
   }
   .gallery {
     display: -webkit-box;
@@ -975,13 +1008,54 @@ footer .footer-bottom p {
         -ms-flex: 33.333%;
             flex: 33.333%;
   }
+  footer ul {
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer ul li {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 20%;
+  }
   footer .flex {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   footer .footer-item2 h4 {
-    padding-top: -7px;
+    padding-top: 1px;
+  }
+  .banner {
+    padding-top: 180px;
+  }
+  .our-team .our-team-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .our-team .our-team-inner .teamflex {
+    width: 45%;
+  }
+  .our-clients {
+    width: 100%;
+  }
+  .our-clients .brand {
+    width: 90%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .our-clients .brand img {
+    width: 26%;
   }
   .info {
     display: -webkit-box;
@@ -994,28 +1068,61 @@ footer .footer-bottom p {
   }
 }
 
-.btn:hover ~ .dropdown {
-  max-height: 400px;
-}
-
-.dropdown {
-  background: #000;
-  max-height: 0;
-  overflow: hidden;
-  z-index: 60;
-  -webkit-transition: all 0.9s ease;
-  transition: all 0.9s ease;
-}
-
-.dropdown a {
-  padding: 10px 20px;
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.dropdown a:hover {
-  background: #333;
+@media (min-width: 1200px) {
+  .gallery {
+    -webkit-box-flex: 23.3333%;
+        -ms-flex: 23.3333%;
+            flex: 23.3333%;
+  }
+  .footer-top {
+    width: 80%;
+  }
+  .footer-top h5 {
+    padding-left: 13px;
+  }
+  .footer-bottom p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gallarie {
+    width: 100%;
+  }
+  .gallarie .gallarie-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 95%;
+    -webkit-box-flex: 43.33333%;
+        -ms-flex: 43.33333%;
+            flex: 43.33333%;
+  }
+  .gallarie .gallarie-inner img {
+    width: 96%;
+  }
+  .gallarie .three img {
+    height: 255.44px;
+  }
+  .our-team .teamflex {
+    -webkit-box-flex: 13.333%;
+        -ms-flex: 13.333%;
+            flex: 13.333%;
+  }
+  .our-clients .brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 23.3333%;
+        -ms-flex: 23.3333%;
+            flex: 23.3333%;
+    width: 100%;
+  }
+  .our-clients .brand img {
+    width: 15%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
