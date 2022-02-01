@@ -60,10 +60,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #ffffff;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fca709a8;
 }
 
 header img {
@@ -76,6 +76,9 @@ header img {
 }
 
 header ul {
+  width: 100%;
+  top: 60px;
+  background-color: #fca709a8;
   list-style: none;
   overflow: hidden;
   position: absolute;
@@ -90,7 +93,7 @@ header ul a {
 }
 
 header ul a:hover {
-  background-color: darkgray;
+  color: #ff0000;
 }
 
 header .menu {
@@ -109,7 +112,8 @@ header .menu-icon {
 }
 
 header .menu-icon .nav-icon {
-  background-color: darkgray;
+  background-color: gray;
+  color: #ff0000;
   display: block;
   height: 2px;
   width: 18px;
@@ -232,13 +236,13 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
   font-size: 15px;
   text-align: center;
   width: 100%;
-  -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 200%);
+          transform: translate(0%, 200%);
   position: relative;
   top: 0%;
   left: 0%;
   height: 100%;
-  margin: 0 auto;
+  margin: 5px;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -247,7 +251,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 10px;
-  padding-top: 30px;
+  padding-top: 5px;
 }
 
 .gallery .onHover h1 {
@@ -255,6 +259,8 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
   font-size: 23px;
   text-align: center;
   padding: 10px;
+  -webkit-transform: translate(0%, 220%);
+          transform: translate(0%, 220%);
 }
 
 .gallery:hover .onHover {
@@ -293,7 +299,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 }
 
 .banner .banner-inner h1 {
-  font-size: 30px;
+  font-size: 56px;
   padding-bottom: 10px;
 }
 
@@ -314,6 +320,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 }
 
 .gallarie .gallarie-inner {
+  overflow: hidden;
   width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,7 +518,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 }
 
 .baner h1 {
-  font-size: 30px;
+  font-size: 56px;
   margin-bottom: 10px;
 }
 
@@ -699,9 +706,13 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 .details h4 {
   font-size: 30px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .details form {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,7 +721,6 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 0px;
-  margin-top: 10px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -718,17 +728,19 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 
 .details form .e-mail {
   font-size: 15px;
-  height: 45px;
+  height: 65px;
   padding-left: 5px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
 }
 
 .details form .name {
   padding-left: 5px;
-  margin-top: 10px;
   width: 295px;
   font-size: 15px;
-  height: 45px;
+  height: 46px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
 }
 
 .details .fill {
@@ -749,14 +761,16 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 }
 
 .details .fill .subject {
+  border: 1px solid grey;
   width: 90%;
   height: 51px;
-  margin-bottom: 10px;
   padding-left: 10px;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .details .fill .text-area {
+  border: 1px solid grey;
+  margin-bottom: 20px;
   padding-left: 10px;
   padding-top: 25px;
   -webkit-box-pack: center;
@@ -770,17 +784,18 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
   margin-bottom: 10px;
 }
 
+.details .fill .bt {
+  width: 300px;
+}
+
 .details .fill .bt button {
   background-color: #ffa500;
-  width: 90%;
+  width: 100%;
   height: 45px;
-  z-index: 80;
   font-size: 15px;
   border: none;
   color: #ffffff;
   color: #000000;
-  background-color: darkgray;
-  border: 2px outset #b37d00;
 }
 
 .details .fill .dropdown {
@@ -790,50 +805,18 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 }
 
 button {
-  width: 100px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
   height: 100px;
   background-color: #ff0000;
   position: relative;
-  -webkit-animation-name: dropsubmit;
-          animation-name: dropsubmit;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-iteration-count: 5;
-          animation-iteration-count: 5;
 }
 
-@-webkit-keyframes dropsubmit {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  75% {
-    left: 0px;
-    top: 100px;
-  }
-  100% {
-    background-color: #ff0000;
-    left: 0px;
-    top: 0px;
-  }
-}
-
-@keyframes dropsubmit {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  75% {
-    left: 0px;
-    top: 100px;
-  }
-  100% {
-    background-color: #ff0000;
-    left: 0px;
-    top: 0px;
-  }
+.btn {
+  width: 90px;
 }
 
 .btn:hover ~ .dropdown {
@@ -845,8 +828,8 @@ button {
   max-height: 0;
   overflow: hidden;
   z-index: 60;
-  -webkit-transition: all 0.9s ease;
-  transition: all 0.9s ease;
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
 }
 
 .dropdown a {
@@ -858,7 +841,7 @@ button {
 }
 
 .dropdown a:hover {
-  background: #333;
+  background: #fca709a8;
 }
 
 footer {
@@ -947,6 +930,20 @@ footer .footer-bottom p {
 }
 
 @media (min-width: 568px) {
+  .our-team-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .our-team-inner .teamflex {
+    width: 45%;
+  }
   .flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -969,6 +966,13 @@ footer .footer-bottom p {
 @media (min-width: 768px) {
   header img {
     width: 220px;
+  }
+  header ul {
+    position: unset;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    background-color: transparent;
   }
   header ul li a {
     font-size: 15px;
@@ -995,7 +999,7 @@ footer .footer-bottom p {
     padding-top: 100px;
   }
   .hero .hero-inner h1 {
-    font-size: 30px;
+    font-size: 70px;
   }
   .gallery {
     display: -webkit-box;
@@ -1031,6 +1035,9 @@ footer .footer-bottom p {
   .banner {
     padding-top: 180px;
   }
+  .our-team h2 {
+    font-size: 40px;
+  }
   .our-team .our-team-inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1048,6 +1055,9 @@ footer .footer-bottom p {
   .our-clients {
     width: 100%;
   }
+  .our-clients h1 {
+    font-size: 40px;
+  }
   .our-clients .brand {
     width: 90%;
     -webkit-box-pack: space-evenly;
@@ -1057,22 +1067,44 @@ footer .footer-bottom p {
   .our-clients .brand img {
     width: 26%;
   }
-  .info {
+}
+
+@media (min-width: 992px) {
+  .baner .info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
+    width: 100%;
+    margin: 0 auto;
   }
-  .info img {
-    width: 40%;
+  .baner .info .img {
+    width: 50%;
+    overflow: hidden;
+  }
+  .baner .info .img img {
+    margin-bottom: unset;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .baner .info .contact-details {
+    width: 48%;
+    margin-top: 5px;
+  }
+  .details {
+    padding-top: 100px;
+  }
+  .our-team .teamflex {
+    -webkit-box-flex: 13.333%;
+        -ms-flex: 13.333%;
+            flex: 13.333%;
   }
 }
 
 @media (min-width: 1200px) {
   .gallery {
-    -webkit-box-flex: 23.3333%;
-        -ms-flex: 23.3333%;
-            flex: 23.3333%;
+    -webkit-box-flex: 18.3333%;
+        -ms-flex: 18.3333%;
+            flex: 18.3333%;
   }
   .footer-top {
     width: 80%;
@@ -1084,6 +1116,16 @@ footer .footer-bottom p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  body {
+    width: 97%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .gallarie {
     width: 100%;
@@ -1123,6 +1165,27 @@ footer .footer-bottom p {
   }
   .our-clients .brand img {
     width: 15%;
+  }
+  .baner .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .baner .info .img {
+    width: 48%;
+    overflow: hidden;
+  }
+  .baner .info .img img {
+    margin-bottom: unset;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .baner .info .contact-details {
+    margin-top: 5px;
+    height: 628px;
+    width: 52%;
   }
 }
 /*# sourceMappingURL=style.css.map */
