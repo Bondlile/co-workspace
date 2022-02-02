@@ -29,8 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	line-height: 1,3;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -132,7 +132,7 @@ $liyle: none;
 
 header{ position: $fi; width: $w; z-index: 450; display: $fl;  background-color: $wcolor; justify-content: $justspb;
     img{  width: 141px;height: $ha; padding-left: $pad; padding-top: $pad; object-fit: $objfit;} 
-        ul{ width: $w; top: 60px; background-color: $tcolor; list-style: $tedeco; overflow: $overf; position: $ab; 
+        ul{ width: $w; top: 60px; background-color: rgba(255, 166, 0, 0.986); list-style: $tedeco; overflow: $overf; position: $ab; 
             a{ font-weight: 700; display: $dblock;  text-decoration: $tedeco; color: $bcolor; padding: 20px; &:hover{ color: $rcolor;} } }
                 .menu{ right: $r; clear: both; transition: max-height 0.2s ease-out ; max-height: 0;}
                     .menu-icon{ cursor: $curs; float: right;  padding: 28px 20px;position: $re;
@@ -157,7 +157,7 @@ header{ position: $fi; width: $w; z-index: 450; display: $fl;  background-color:
     .premium img{ position: $fi;position: $ab; top: 56px; right: $r; z-index: 30;} 
         .hero-inner{ margin-top: 90px;margin-bottom: 30px;justify-content: $align;align-items: $align;text-align: $align;
              h1{ font-size: $fomed5; padding-bottom: $pad; }
-                 p{ font-size: 17px; padding: 5px $pad $paddd $pad; } 
+                 p{ font-size: 17px; padding: 5px $pad $paddd $pad ; line-height: 1.3; } 
                      }  
                         }
 // end of Hero style
@@ -166,8 +166,8 @@ header{ position: $fi; width: $w; z-index: 450; display: $fl;  background-color:
 .gallery { position: $re; width: $wd; cursor: $curs;
     img{ display: $dblock; width: $w; height: $ha; }
         .onHover{ position: $ab; bottom: $r; left: $r; right: $r; background-color: $tcolor; overflow: $overf; width: $w; transform: scale(0); transition: 0.3s ease; height: $h;
-           .text p{ color: $wcolor; font-size: 15px; text-align: $align; width: $w; transform: translate(0%, 200%); position: $re; top: 0%;left: 0%; height: $h; margin: 5px; text-align: $align;justify-content: $align; align-items: $align; padding-bottom: $pad; padding-top: 5px;}
-             h1{ color: $wcolor; font-size: 23px; text-align: $align; padding: $pad; transform: translate(0%, 220%);}}
+           .text p{ color: $wcolor; font-size: 15px; text-align: $align; width: $w; transform: translate(0%, 0%); position: $re; top: 0%;left: 0%; height: $h; margin: 5px; text-align: $align;justify-content: $align; align-items: $align; padding-bottom: $pad; padding-top: 5px;}
+             h1{ color: $wcolor; font-size: 23px; text-align: $align; padding: $pad; transform: translate(0%, 10%);}}
                 }
                     .gallery:hover .onHover{ transform: scale(1); } 
                         .hover{ display: $fl; flex-wrap: $wrap;}
@@ -191,10 +191,10 @@ header{ position: $fi; width: $w; z-index: 450; display: $fl;  background-color:
 
 
 // gallarie style
-.gallarie{ width: $w; display: $fl; flex-direction: $fldc; background-color: $wcolor;
-    .gallarie-inner{ overflow: hidden; width: $wd1; display: $fl; flex-direction: $fldc; margin: $aut; text-align: left;
-        img{ width: $w; height: $ha;padding-top: $paddd; cursor: $curs; padding-bottom: 5px; transition: all 0.7s ease-in-out; &:hover { transform: scale(1.05); } }
-            .one, .two, .three {
+.gallarie{ overflow: hidden; width: $w; display: $fl; flex-direction: $fldc; background-color: $wcolor;
+    .gallarie-inner{ max-width: 600px; overflow: hidden; width: $wd1; display: $fl; flex-direction: $fldc; margin: $aut; text-align: left;
+        img{ overflow: hidden; width: $w; height: $ha;padding-top: $paddd; cursor: $curs; padding-bottom: 5px; transition: all 0.7s ease-in-out; &:hover { transform: scale(1.05); } }
+            .one, .two, .three { overflow: hidden; max-width: 400px;
                 margin: $aut; align-items: $align; justify-content: $align; padding-bottom: 30px;
                      h5{  font-size: 20px; display: $fl; margin:  $aut; text-align: $align; align-items: $align; justify-content: $align; padding-top: 5px; padding-bottom: $pad;}
                          p{ font-size: 16px; display: $fl; margin: $aut; justify-content: $align; align-items: $align; padding: 0px $pad $pad $pad; text-align: $align;}}}
@@ -216,8 +216,8 @@ header{ position: $fi; width: $w; z-index: 450; display: $fl;  background-color:
 .our-clients{ display: $fl; flex-direction: $fldc; width: $w; background-color: $wcolor; justify-content: $align; align-items: $align; padding-bottom: 40px;
     h1{ font-size: $fomed5; padding-bottom: $pad;padding-top: $paddd; text-align: $align;}
         p{ align-items: $align; font-size: 18px; margin: $aut; justify-content: $align; text-align: $align; padding: 0 $pad $paddd $pad;}
-            .brand{ display: $fl; flex-wrap: $wrap; margin: $aut; justify-content: $justspe;  
-                 img{ width: 40%; justify-content: $justspb;}
+            .brand{ display: $fl; flex-wrap: $wrap; margin: $aut; justify-content: $justspe; width: 80%;  
+                 img{ width: 34%; justify-content: $justspb;}
                     }
                         }
 // end of our clients section
@@ -234,9 +234,11 @@ header{ position: $fi; width: $w; z-index: 450; display: $fl;  background-color:
 .baner{z-index: 2;
         h1{ font-size: 56px;margin-bottom: $pad;}        
             p{ padding: $padd; color: $dcolor; font-size: $fomed3;}  
-                 .baner-inner{ padding-top: 150px; margin-bottom: $paddd;justify-content: $align;align-items: $align; text-align: $align;}   
-                    .info{align-items: $align;margin-bottom: 30px;justify-content: $align;   
-                         img{  align-items: $align;justify-content: $align; margin: $aut;display: $fl; width: 97%; margin-bottom: $pad;  }          
+                 .baner-inner{ padding-top: 150px; margin-bottom: $paddd;justify-content: $align;align-items: $align; text-align: $align;}  
+
+                    .info{align-items: $align;margin-bottom: 30px;justify-content: $align; max-width: 550px ; margin: 0 auto;
+                          
+                         img{ overflow: hidden; align-items: $align;justify-content: $align; margin: $aut;display: $fl; width: 97%; margin-bottom: $pad;  }          
                              .contact-details{ width: 97%;background-color: $bcolor; color: $wcolor;justify-content: $align; align-items: $align;text-align: $align;justify-content: $align; margin: $aut;         
                                  .address{ padding-top: $paddd; align-items: $align; 
                                      ul{  margin-bottom: $pad;  list-style: $tedeco; margin-top: $pad;
@@ -265,12 +267,12 @@ header{ position: $fi; width: $w; z-index: 450; display: $fl;  background-color:
 // Details Section
 .details{display: $fl;flex-direction: $fldc;justify-content: $align;align-items: $align;padding-bottom: $paddd;
     h4{  font-size: $fomed5;   margin-bottom: $paddd; font-weight: 700;} 
-        form{  justify-content: space-evenly; display: $fl;  flex-direction: $fldc; margin-bottom: 0px; width: max-content; 
-            .e-mail{ font-size: 15px;  height: 65px;  padding-left: 5px; margin-bottom: 10px; border: 1px solid grey;}       
-                .name{ padding-left: 5px; width: 295px; font-size: 15px;height: 46px; margin-bottom: 10px; border: 1px solid grey;}   }
+        form{ display: flex; flex-direction: column; justify-content: space-evenly; margin-bottom: 0px; width: max-content; 
+            .e-mail{ font-size: 15px;  height: 46px;  padding-left: 5px; margin-bottom: 5px; border: 1px solid grey;}       
+                .name{ padding-left: 5px; width: 295px; font-size: 15px;height: 46px; margin-bottom: 5px; border: 1px solid grey;  }   }
                     .fill { margin: $aut;  justify-content: $align; align-items: $align; display: $fl; flex-direction:$fldc;   
-                            .subject{ border: 1px solid grey; width: $sw2;  height: 51px;   padding-left: $pad; margin-bottom: 20px;} 
-                        .text-area{ border: 1px solid grey; margin-bottom: 20px; padding-left: $pad; padding-top: 25px; justify-content: $align; align-items: $align;  height: 75px; width: 90%; margin-bottom: $pad;} 
+                            .subject{ border: 1px solid grey; width: $sw2;  height: 46px;   padding-left: $pad; margin-bottom: 5px; } 
+                        .text-area{ text-align: unset; border: 1px solid grey; margin-bottom: 20px; padding-left: $pad; padding-top: 5px; justify-content: $align; align-items: $align;  height: 46px; width: 90%; margin-bottom: $pad; } 
                     .bt{ width: 300px;
                 button{ background-color: $ocolor; width: 100%;height: 45px; font-size: 15px;border: $tedeco;color: $wcolor; color: $bcolor ;
              
@@ -292,17 +294,17 @@ button {   margin: 0 auto; align-items: center;   width: 200px;height: 100px;bac
 
 
 // FOOTER STYLE
-footer{background-color: $bcolor;color: $wcolor; display: $fl; flex-direction: $fldc; margin: $aut; justify-content: $align; align-items: $align;
+footer{ width: 100%; overflow: hidden; background-color: $bcolor;color: $wcolor; display: $fl; flex-direction: $fldc; margin: $aut; justify-content: $align; align-items: $align;
     .footer-top{ 
-        ul{display: $fl; width: $w;
-            li{justify-content: $justspb;
-                i{font-size: $fomed5; color: $dcolor; padding-left: 25px; margin-top: $paddd;margin-bottom: $paddd;} }}          
-                    h3,h5{font-size: 20px; display: $fl; margin: $aut; text-align:  $align;justify-self: $align;padding-left: 50px; }
-                    p,a{color: grey; text-decoration: $tedeco; font-size: 18px; line-height: normal; padding: 5px; text-align: $align;}}            
-                h4{ font-size: 20px; display: $fl; margin: $aut; text-align:  $align;justify-self: $align;padding-left: 90px;}
+        ul{display: $fl; width: 100%;
+            li{ color: grey; padding-top: 2px; justify-content: $justspb; font-size: 13px; text-align: center;
+                i{margin: 0 auto; font-size: $fomed5; color: $dcolor; margin-top: $paddd;margin-bottom: 5px;} }}          
+                    h3,h5{ padding-top: 10px; font-size: 20px; display: $fl; margin: $aut; text-align:  $align;padding: 10px 70px; align-items: center; justify-content: center; }
+                    p,a{color: grey; text-decoration: $tedeco; font-size: 15px; line-height: normal; padding: 5px; text-align: $align;}}            
+                h4{ font-size: 20px; display: $fl; margin: $aut; text-align:  $align;justify-self: $align;padding-left: 112px;}
             hr{height: 0.5px;border: $tedeco;background-color: $dcolor; margin-bottom: $pad; width: $w; }
         .footer-bottom{ 
-    p{ color: $dcolor;font-size: 18px;padding: 8px 0 15px $pad; }  }          
+    p{ color: $dcolor;font-size: 14px;padding: 7px 0 15px $pad; text-align: center; }  }          
 }
 // END OF FOOTER
 
@@ -315,31 +317,37 @@ footer{background-color: $bcolor;color: $wcolor; display: $fl; flex-direction: $
     
     
     .our-team-inner { display: flex; width: 100%; flex: 50%; flex-wrap: wrap; 
-        .teamflex{ width: 45%;  }
+        .teamflex{ width: 45%;  img{ width: 96%;} }
             }
+            .our-clients { img{ width: 34%; } }
        
 
 
+.banner  p{ padding: 20px 60px ;}
 
 
 
-
-    .flex{ display: flex;}
-        footer .footer-top ul{ margin: 0 auto; align-items: center; justify-content: center;}
-        .footer-item2 h4{ padding-top: 10px;}
+    .flex{ width: 100%; overflow: hidden; justify-content: center ; text-align: center; object-fit: contain; flex: 33,3333%;}
+        footer .footer-top p{ font-size: 13px; } ul{ margin: 0 auto; align-items: center; justify-content: center; li{ padding: 5px;}}
+        .footer-item2 h4{ padding-top: 5px; padding-left: 107px;}
+        .footer-bottom{   br{ display: none;}
+                        p,a{ font-size: 13px;  display: flex;  }
             }
 
+            
+        }
+
 @media ( min-width: 768px){
-    header{ 
+    header{ justify-content: space-between; text-align: right;
         img{ width: 220px; }
-         ul{ position: unset;width:max-content; background-color: transparent;
-            li{
-                a{ font-size: 15px;} }
+         ul{ justify-content: flex-end; width: 50%; padding: unset;  position: unset;width:max-content; background-color: transparent;
+             li{ width: 30%; padding: 5px;
+                a{  font-size: 15px; padding: 30px 0px;} }
                      }
                         }
-                            header li{ float: left; }
-                                 header li a{ padding: 30px 30px;}
-                                     header .menu{  clear: none; float: right; max-height: none; }
+                            header li{ float: left;}
+                                 header li a{ padding-right: 0px;}
+                                     header .menu{  clear: none; float: right; max-height: none; width: 40%; margin-right: 0px; }
                                          .menu-icon{ display: none; }
                                              .premium{ padding-top: 20px; width: 120px;}
                                         .hero {  padding-top: 100px;
@@ -348,16 +356,20 @@ footer{background-color: $bcolor;color: $wcolor; display: $fl; flex-direction: $
                               }
                          }
                     .gallery{ display: flex; width: 33.333%;  img{ flex: 33.333%;}}
-                footer{  ul  { margin: 0 auto; justify-content: space-between; li{ justify-content: space-evenly; width: 20%; }  }
-            .flex{ justify-content: space-between; }  
-.footer-item2 h4{ padding-top: 1px;}}
+                footer{ .footer-top { h1,h5{  padding: 15px; text-align: center; }  p,a,li{font-size: 19px; }} ul  { width: 50%; padding: 5px; margin: 0 10px 0px 0px; align-items: center; justify-content: center; li{ display: flex; margin: 0px; width: 16%; text-align: center; margin-top: 0px; justify-content: space-evenly; .fab fa-twitter{ margin-right: 2px;} .tw{ padding-left: 2px; } a{padding: 0px;  } p{ margin: 18px 0px; padding: 0px; padding-left: 2px; } }  }
+            .flex{ width: 100%; justify-content: center; display: flex; align-items: center; margin: 0 auto; .footer-item2 { margin-top: -12px;   a{ justify-content: center; text-align: center; padding-top: 20px; } }  }  
+.footer-item2 h4{ padding-top: 0px; padding-left: 100px; } 
+.footer-item2 {  padding-top: 0px; padding-left: 2px; margin-top: 5px; a{ padding-top: 15px;} h4{ margin-bottom: 10px; }  }
+.footer-item0{ margin-top: -12px; padding-top: 10px; width: 30%; h3{width: 100%; margin-left: 10px; padding-left: 0px; }  } 
+.footer-item1{ h5{ padding-bottom: 0px; } p{ padding-top: 15px; } }
+}
 
 
 
 
 //  About Us
 
-.banner{ padding-top: 180px;}
+.banner{ padding-top: 180px;  .banner  p{ padding: 20px 120px ;} }
     .our-team {   h2{ font-size: 40px; }    
         .our-team-inner { display: flex; width: 100%; flex: 50%; flex-wrap: wrap; 
          .teamflex{ width: 45%;  }
@@ -383,12 +395,13 @@ footer{background-color: $bcolor;color: $wcolor; display: $fl; flex-direction: $
 //  992px media querry 
 
 @media(min-width:992px){
-    .baner {
-        .info{    display: flex; width: 100%; margin:0 auto;
+    .banner  p{ padding: 20px 130px ;}
+    .baner {  .baner-inner{ p{  padding: 10px 100px; } }
+        .info{  max-width: unset; display: flex; flex-direction: column; width: 100%; margin:0 auto; 
         .img{width:50%;overflow:hidden;
-            img{ margin-bottom: unset;  width:100%;margin-bottom: 0px;}
+            img{ margin-bottom: unset;  width:100%;margin-bottom: 0px; max-height: 549px;}
         }    
-             .contact-details{ width: 48%;margin-top: 5px;}
+             .contact-details{ width: 50%;margin-top: 5px; max-height: 570px; .phone{ margin-top: -15px; ul{  margin-top: 0px;}}  .email{  margin-top: -30px; }}
                 } 
     }
 .details{  padding-top: 100px; }
@@ -407,39 +420,48 @@ footer{background-color: $bcolor;color: $wcolor; display: $fl; flex-direction: $
 // 1200px Media querry
 
 @media (min-width:1200px){
+.hero {  p{ display: flex;  width: 100%; margin: 0 auto; text-align: center; align-items: center; justify-content: center;} }
+
     .gallery { flex: 18.3333%; }
-        .footer-top { width: 80%;
+        .footer-top { width: 80%; li{width: 12%; }
              h5{ padding-left: 13px;}
+             .flex{ align-items: center; margin: 0 auto; justify-content: space-evenly;   width: 100%; 
+                .footer-item0 {  padding-top: 0px; margin-top: 8px; h3{ padding-left: 0px; padding-bottom: 10px; padding-top: 0px; } p{ padding-top: 20px; } }
+                .footer-item2  {  margin-top: 10px; h4{margin-top: -33px; margin-bottom: 20px; } p{padding-top: 10px; margin-top: 5px } }
+                .footer-item1{   h5{ padding-top: 0px; margin-bottom: 15px; }  }
+            }
                 }
-                    .footer-bottom{   
-                        p{  display: flex; }
+                    .footer-bottom{   br{ display: none;}
+                        p{  display: flex;  }
                             }
 // about us
 
 body{ width: 97%; margin: 0 auto; justify-content: center; align-items: center; }
-.gallarie{ width: 100%;
-    .gallarie-inner{ display: flex; flex-direction: row; width: 95%; flex: 43.33333%;  img{ width: 96%; }}
-        .three img{  height: 255.44px; }
+.gallarie{ width: 90%; margin: 0 auto;
+    .gallarie-inner{  max-width: unset; display: flex; flex-direction: row; width: 95%; flex: 43.33333%;  img{ width: 95%; }}
+        .three img{ max-height: 220.44px; height: 165px; }
+        .two img, .one img{ max-height: 165px; }
             }
-                .our-team{
+                .our-team{ width: 70%; margin: 0 auto;
                     .teamflex{ flex: 13.333%; }
                         }
                             .our-clients {
-                                .brand{  display: flex;  flex: 23.3333%; width: 100%;
-                                    img{ width: 15%; }
+                                .brand{  display: flex;   width: 70%;
+                                    img{ width: 13%;padding: 15px; }
                                         }
                                             }
                                             .baner {
-                                                .info{    display: flex; width: 95%; margin:0 auto;
-                                                .img{width:48%;overflow:hidden;
-                                                    img{ margin-bottom: unset;  width:100%;margin-bottom: 0px;}
+                                                .info{   max-width: unset; display: flex; width: 95%; margin:0 auto; flex-direction: row; padding: 5px 0px;
+                                                .img{width:50%;overflow:hidden;
+                                                    img{ margin-bottom: unset;  width:100%;margin-bottom: 0px; max-height: 570px;}
                                                 }
                                                
                                             
-                                                     .contact-details{margin-top: 5px; height: 628px; width: 52%;}
+                                                     .contact-details{display: unset; margin-top: 0px;  width: 50%; max-height: 590px; .phone{ padding-bottom: 15px; }}
                                                         } 
                                             }
-
+                                          
+                                                           
 
                                                 }
 
