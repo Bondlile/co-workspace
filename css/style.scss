@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1,3;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "roboto";
 }
 ol, ul {
 	list-style: none;
@@ -156,7 +156,7 @@ header{ position: $fi; width: $w; z-index: 450; display: $fl;  background-color:
 .hero{ padding-top: $paddi;
     .premium img{ position: $fi;position: $ab; top: 56px; right: $r; z-index: 30;} 
         .hero-inner{ margin-top: 90px;margin-bottom: 30px;justify-content: $align;align-items: $align;text-align: $align;
-             h1{ font-size: $fomed5; padding-bottom: $pad; }
+             h1{ font-family: "roboto"; font-size: $fomed5; padding-bottom: $pad; }
                  p{ font-size: 17px; padding: 5px $pad $paddd $pad ; line-height: 1.3; } 
                      }  
                         }
@@ -204,11 +204,13 @@ header{ position: $fi; width: $w; z-index: 450; display: $fl;  background-color:
 // our team section
 .our-team{ display: $fl; flex-direction: $fldc; width: $w; background-color: $wcolor; justify-content: $align; align-items: $align; padding-bottom: 40px;
     h2{ font-size: 25px; padding-bottom: $pad;}
-        p{ align-items: $align; margin: $aut; justify-content: $align; text-align: $align; padding: 0 $pad $paddd $pad;}
+        p{ align-items: $align; margin: $aut; justify-content: $align; text-align: $align;}
             .our-team-inner{ width: $wd1; margin: $aut; align-items: $align; justify-content: $align;}
                 h6{ margin:  $aut; text-align: $align; font-size: 26px; padding-top: $pad; padding-bottom: 3px;}
                     p{ font-size: 18px;}
                         img{ width: $w;}
+                            .icony{ margin-bottom: 15px; a{text-decoration: none; font-size: 20px;color: slategray; } i{ margin-top: 6px; padding: 3px; font-size: 20px; margin: 0 auto; text-align: center;  } }
+                            .teamflex{  a{ font-weight: 700; text-decoration: none; color: slategray; }margin-bottom: 10px; margin-top: 20px; align-items: center; justify-content: center; text-align: center; margin: 20px auto;}
                             }
 //  end of our team section
 
@@ -265,28 +267,32 @@ header{ position: $fi; width: $w; z-index: 450; display: $fl;  background-color:
 // baner end
 
 // Details Section
-.details{display: $fl;flex-direction: $fldc;justify-content: $align;align-items: $align;padding-bottom: $paddd;
-    h4{  font-size: $fomed5;   margin-bottom: $paddd; font-weight: 700;} 
-        form{ display: flex; flex-direction: column; justify-content: space-evenly; margin-bottom: 0px; width: max-content; 
-            .e-mail{ font-size: 15px;  height: 46px;  padding-left: 5px; margin-bottom: 5px; border: 1px solid grey;}       
-                .name{ padding-left: 5px; width: 295px; font-size: 15px;height: 46px; margin-bottom: 5px; border: 1px solid grey;  }   }
-                    .fill { margin: $aut;  justify-content: $align; align-items: $align; display: $fl; flex-direction:$fldc;   
-                            .subject{ border: 1px solid grey; width: $sw2;  height: 46px;   padding-left: $pad; margin-bottom: 5px; } 
-                        .text-area{ text-align: unset; border: 1px solid grey; margin-bottom: 20px; padding-left: $pad; padding-top: 5px; justify-content: $align; align-items: $align;  height: 46px; width: 90%; margin-bottom: $pad; } 
-                    .bt{ width: 300px;
-                button{ background-color: $ocolor; width: 100%;height: 45px; font-size: 15px;border: $tedeco;color: $wcolor; color: $bcolor ;
-             
-          }  }
-    .dropdown{ position: $re;display: inline-block; background-color: rgba(128, 128, 128, 0.473);}}      
+.details{ display: flex; flex-direction: column; width: 100%; margin: 0 auto; justify-content: center;
+    h4{ font-weight: bold; padding-top: 60px; margin: 0 auto; text-align: center; font-size: 30px ;  margin-bottom: 10px;}
+
+    form{ width: 90%; margin: 0 auto; justify-content: center; 
+    .flex1{     width: 100%;
+        .e-mail{ width: 100%; height: 46px; margin-bottom: 20px; }
+        .name { box-shadow:black;  text-align: left;  width: 100%; height: 46px; margin-bottom: 20px;   }
+        input{
+            padding:0;
+        }
+    }
+    .subject{  text-align: left;  width: 100%; height: 46px; margin-bottom: 20px; }
+    .text-area {  text-align: left; resize: none; width: 100%; height: 60px; margin-bottom: 20px; }
+
+    button{  padding-left: 10px; color: #ffffff; border:none;margin: 0 auto; align-items: center; font-size: 15px; justify-content: center; background-color: #E8A621; width: 100%; height: 46px;  margin-bottom: 20px;}
+
+    }
+
+
+
+
+
+
+
+
 }
-button {   margin: 0 auto; align-items: center;   width: 200px;height: 100px;background-color: $rcolor;position: $re;}
-   
-        .btn{ width: 90px;
-             &:hover ~ .dropdown{  max-height: 400px; }}
-                .dropdown{ background:$bcolor; max-height:0;overflow:$overf;  z-index: 60;transition:all .9s ease;
-                    a{ padding: $pad 20px; display:$dblock;  width:$w;  text-decoration:$tedeco;color:$wcolor;
-                      &:hover{ background:$tcolor;  } }    
-                        }
 // end of Details Section
 
 
@@ -297,14 +303,14 @@ button {   margin: 0 auto; align-items: center;   width: 200px;height: 100px;bac
 footer{ width: 100%; overflow: hidden; background-color: $bcolor;color: $wcolor; display: $fl; flex-direction: $fldc; margin: $aut; justify-content: $align; align-items: $align;
     .footer-top{ 
         ul{display: $fl; width: 100%;
-            li{ color: grey; padding-top: 2px; justify-content: $justspb; font-size: 13px; text-align: center;
-                i{margin: 0 auto; font-size: $fomed5; color: $dcolor; margin-top: $paddd;margin-bottom: 5px;} }}          
+            li{  color: #616265; padding-top: 2px; justify-content: $justspb; font-size: 13px; text-align: center; p{ font-family: "robotob"; }
+                i{ font-weight: 700;  margin: 0 auto; font-size: $fomed5; color: #616265; margin-top: $paddd;margin-bottom: 5px;} }}          
                     h3,h5{ padding-top: 10px; font-size: 20px; display: $fl; margin: $aut; text-align:  $align;padding: 10px 70px; align-items: center; justify-content: center; }
-                    p,a{color: grey; text-decoration: $tedeco; font-size: 15px; line-height: normal; padding: 5px; text-align: $align;}}            
+                    p,a{color: #616265; text-decoration: $tedeco; font-size: 15px; line-height: normal; padding: 5px; text-align: $align;}}            
                 h4{ font-size: 20px; display: $fl; margin: $aut; text-align:  $align;justify-self: $align;padding-left: 112px;}
             hr{height: 0.5px;border: $tedeco;background-color: $dcolor; margin-bottom: $pad; width: $w; }
         .footer-bottom{ 
-    p{ color: $dcolor;font-size: 14px;padding: 7px 0 15px $pad; text-align: center; }  }          
+    p{ color: #616265;font-size: 14px;padding: 7px 0 15px $pad; text-align: center; }  }          
 }
 // END OF FOOTER
 
@@ -320,6 +326,7 @@ footer{ width: 100%; overflow: hidden; background-color: $bcolor;color: $wcolor;
         .teamflex{ width: 45%;  img{ width: 96%;} }
             }
             .our-clients { img{ width: 34%; } }
+           
        
 
 
@@ -341,13 +348,13 @@ footer{ width: 100%; overflow: hidden; background-color: $bcolor;color: $wcolor;
     header{ justify-content: space-between; text-align: right;
         img{ width: 220px; }
          ul{ justify-content: flex-end; width: 50%; padding: unset;  position: unset;width:max-content; background-color: transparent;
-             li{ width: 30%; padding: 5px;
+             li{ width: max-content; padding: 5px;
                 a{  font-size: 15px; padding: 30px 0px;} }
                      }
                         }
                             header li{ float: left;}
                                  header li a{ padding-right: 0px;}
-                                     header .menu{  clear: none; float: right; max-height: none; width: 40%; margin-right: 0px; }
+                                     header .menu{  clear: none; float: right; max-height: none; width: max-content; margin-right: 35px; }
                                          .menu-icon{ display: none; }
                                              .premium{ padding-top: 20px; width: 120px;}
                                         .hero {  padding-top: 100px;
@@ -356,13 +363,17 @@ footer{ width: 100%; overflow: hidden; background-color: $bcolor;color: $wcolor;
                               }
                          }
                     .gallery{ display: flex; width: 33.333%;  img{ flex: 33.333%;}}
-                footer{ .footer-top { h1,h5{  padding: 15px; text-align: center; }  p,a,li{font-size: 19px; }} ul  { width: 50%; padding: 5px; margin: 0 10px 0px 0px; align-items: center; justify-content: center; li{ display: flex; margin: 0px; width: 16%; text-align: center; margin-top: 0px; justify-content: space-evenly; .fab fa-twitter{ margin-right: 2px;} .tw{ padding-left: 2px; } a{padding: 0px;  } p{ margin: 18px 0px; padding: 0px; padding-left: 2px; } }  }
-            .flex{ width: 100%; justify-content: center; display: flex; align-items: center; margin: 0 auto; .footer-item2 { margin-top: -12px;   a{ justify-content: center; text-align: center; padding-top: 20px; } }  }  
-.footer-item2 h4{ padding-top: 0px; padding-left: 100px; } 
-.footer-item2 {  padding-top: 0px; padding-left: 2px; margin-top: 5px; a{ padding-top: 15px;} h4{ margin-bottom: 10px; }  }
-.footer-item0{ margin-top: -12px; padding-top: 10px; width: 30%; h3{width: 100%; margin-left: 10px; padding-left: 0px; }  } 
-.footer-item1{ h5{ padding-bottom: 0px; } p{ padding-top: 15px; } }
+                footer{ width: 100%  ; overflow: hidden; .footer-top {  width: 100%; h1,h5{  padding: 15px; text-align: center; }  p,a,li{font-size: 19px; }} ul  { width: 73%; padding: 5px; margin: 0 auto; align-items: center; justify-content: center; 
+                    li{ display: flex; margin: 0px; width: 23%; text-align: center; margin-top: 0px; justify-content: center; .fab fa-twitter{ margin-right: 2px;} .tw{ padding-left: 2px; } a{padding: 0px;  } p{ font-size: 15px; margin: 25px 0px 0px 2px; padding: 0px; padding-left: 2px; } }  }
+            .flex{ margin-top: 50px; margin-bottom: 20px;  width: 100%; justify-content: space-evenly; display: flex;  .footer-item2 {  h4{margin-bottom: 17px; }  a{ justify-content: center; text-align: center; padding-top: 40px; } }  }  
+
+
+.footer-item0{ width: 33%; margin-top: -12px; padding-top: 10px; width: 30%; h3{width: 100%; margin-left: 10px; padding-left: 0px;  }  } 
+.footer-item1{ width: 33%; h5{ padding-top: 0px; } p{ padding-top: 5px; } }
 }
+footer .footer-top ul{ width: 73%; li{  width: 23%; justify-content: center; } }
+
+
 
 
 
@@ -384,9 +395,29 @@ footer{ width: 100%; overflow: hidden; background-color: $bcolor;color: $wcolor;
                         }
 
 // contact 
+ .details{ padding-bottom: 80px;
+     form{ width: 35%;display:flex;flex-wrap:flex;flex-wrap:wrap;
+.flex1 {width: 100%;margin-top:20px; display: flex; margin: 0 auto 20px; align-items: center; justify-content: space-between;;
+    .e-mail{ margin:0; width: 45%;  text-align: left;   border: 1px solid black;  }
+    .name{  margin:0; width: 45%; border: 1px solid black; }
+    input{
+        padding:0 5px ;
+    }
+}
+   .subject {  border: 1px solid black; }
+   .text-area{ font-family: "roboto"; font-weight: 700; color: black; border: 1px solid black; padding:10px 10px 10px 5px;}
+   .btn{
+       width:103%;
+   }
+   input, textarea{
+    padding:0 5px ;
+    margin-bottom:20px;
+}
+}
 
- 
-        }
+
+ }
+}
 
 // end of 768px media querry
 
@@ -397,11 +428,18 @@ footer{ width: 100%; overflow: hidden; background-color: $bcolor;color: $wcolor;
 @media(min-width:992px){
     .banner  p{ padding: 20px 130px ;}
     .baner {  .baner-inner{ p{  padding: 10px 100px; } }
-        .info{  max-width: unset; display: flex; flex-direction: column; width: 100%; margin:0 auto; 
+        .info{ display:flex; max-width: unset; display: flex; flex-direction: row; width: 100%; margin:0 auto; max-height:500px;overflow:hidden;
         .img{width:50%;overflow:hidden;
             img{ margin-bottom: unset;  width:100%;margin-bottom: 0px; max-height: 549px;}
         }    
-             .contact-details{ width: 50%;margin-top: 5px; max-height: 570px; .phone{ margin-top: -15px; ul{  margin-top: 0px;}}  .email{  margin-top: -30px; }}
+             .contact-details{ width: 50%;margin-top: 5px; max-height: 570px; 
+               
+                .phone{ margin-top: -15px;
+                    a,p{
+                        font-size:14px;
+                    }
+                     ul{  margin-top: 0px;}} 
+                      .email{  margin-top: -30px; padding-left: 0px; }}
                 } 
     }
 .details{  padding-top: 100px; }
@@ -423,12 +461,12 @@ footer{ width: 100%; overflow: hidden; background-color: $bcolor;color: $wcolor;
 .hero {  p{ display: flex;  width: 100%; margin: 0 auto; text-align: center; align-items: center; justify-content: center;} }
 
     .gallery { flex: 18.3333%; }
-        .footer-top { width: 80%; li{width: 12%; }
+        .footer-top { width: 80%;  ul{ max-width: 621px; li{width: 12%; }}
              h5{ padding-left: 13px;}
-             .flex{ align-items: center; margin: 0 auto; justify-content: space-evenly;   width: 100%; 
-                .footer-item0 {  padding-top: 0px; margin-top: 8px; h3{ padding-left: 0px; padding-bottom: 10px; padding-top: 0px; } p{ padding-top: 20px; } }
-                .footer-item2  {  margin-top: 10px; h4{margin-top: -33px; margin-bottom: 20px; } p{padding-top: 10px; margin-top: 5px } }
-                .footer-item1{   h5{ padding-top: 0px; margin-bottom: 15px; }  }
+             .flex{ margin-top: 60px; margin-bottom: 60px; align-items: center; justify-content: space-evenly;   width: max-content; width: 100%;
+                .footer-item0 {  padding-top: 0px; margin-top: -6px; h3{ padding-left: 0px; padding-bottom: 5px; padding-top: 0px; } p{ padding-top: 0px; } }
+                .footer-item2  {  margin-top: 51px; h4{margin-top: -79px; margin-bottom: 25px; } a{padding-top: 0px; margin-top: -10px }   .email{  margin-top: -30px; padding-left: 150px; }  .pemail{ margin-top: -20px; } }
+                .footer-item1{   h5{ padding-top: 0px; margin-bottom: 0px; }  }
             }
                 }
                     .footer-bottom{   br{ display: none;}
@@ -451,17 +489,26 @@ body{ width: 97%; margin: 0 auto; justify-content: center; align-items: center; 
                                         }
                                             }
                                             .baner {
-                                                .info{   max-width: unset; display: flex; width: 95%; margin:0 auto; flex-direction: row; padding: 5px 0px;
+                                                .info{   max-width: unset;  width: 95%; margin:0 auto; padding: 5px 0px;
                                                 .img{width:50%;overflow:hidden;
                                                     img{ margin-bottom: unset;  width:100%;margin-bottom: 0px; max-height: 570px;}
-                                                }
-                                               
+                                                }                                              
                                             
                                                      .contact-details{display: unset; margin-top: 0px;  width: 50%; max-height: 590px; .phone{ padding-bottom: 15px; }}
                                                         } 
                                             }
                                           
-                                                           
+                                                   .details{ display: flex; flex-direction: column;
+                                                        .flex1{ display: flex;
+                                                            flex-direction: row;
+
+                                                        
+
+
+
+                                                        }
+
+                                                   }      
 
                                                 }
 
